@@ -1,7 +1,10 @@
-// Imports
+// packages Imports
 import express from 'express';
 import dotenv from 'dotenv';
-import 'colors'; // Ensures colors package is loaded globally
+import 'colors';
+import cors from 'cors';
+import morgan from 'morgan';
+//file import
 import connectDB from './config/db.js';
 import testRoutes from './routes/testRoutes.js';
 
@@ -16,6 +19,8 @@ const app = express();
 
 // Middleware
 app.use(express.json()); // Body parser middleware for JSON requests
+app.use(cors())
+app.use(morgan("dev"))
 
 // Routes
 app.use('/api/v1/test', testRoutes);
