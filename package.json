@@ -1,0 +1,21 @@
+{
+  "name": "job-portal",
+  "version": "1.0.0",
+  "description": "this is my job portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "jitendra kumar",
+  "license": "ISC",
+  "dependencies": {
+    "color": "^4.2.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.6",
+    "nodemon": "^3.1.9"
+  }
+  
+}
